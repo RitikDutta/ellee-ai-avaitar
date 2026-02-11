@@ -1,0 +1,312 @@
+.contact-hero {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.contact-hero .container {
+  display: flex;
+  overflow: hidden;
+}
+
+.contact-hero .container .contact-hero-col {
+  flex: 1;
+  height: 100%;
+}
+
+.contact-hero .container .contact-hero-img {
+  position: relative;
+  transform: translateY(6rem) scale(1.2);
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+}
+
+.contact-hero .contact-hero-copy {
+  padding: 8rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-hero .contact-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-hero .contact-meta .contact-meta-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-hero .contact-meta .contact-meta-block p {
+  color: var(--base-500);
+}
+
+.contact-callout {
+  background-color: var(--base-700);
+  color: var(--base-100);
+}
+
+.contact-callout p {
+  color: var(--base-500);
+}
+
+.contact-callout .container {
+  padding: 12rem 2rem 3rem 2rem;
+}
+
+.contact-callout .container .contact-callout-header {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-callout .container .contact-callout-header p {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.contact-callout .contact-callout-img {
+  transform: translateY(0rem);
+  will-change: transform;
+  width: 12rem;
+  height: 16rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.contact-callout .contact-callout-logo {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-studio {
+  position: relative;
+  background-color: var(--base-700);
+  color: var(--base-100);
+  padding: 4rem 0 8rem 0;
+  overflow: hidden;
+}
+
+.contact-studio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.07) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.contact-studio .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-studio .contact-studio-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-studio .contact-studio-header h2 {
+  width: 55%;
+}
+
+.contact-studio .contact-studio-header p {
+  color: var(--base-400);
+  width: 35%;
+  text-align: right;
+}
+
+.contact-studio .contact-studio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.contact-studio .studio-card {
+  position: relative;
+  min-height: 30rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: var(--base-600);
+}
+
+.contact-studio .studio-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 0.1) 20%,
+    rgba(10, 10, 10, 0.8) 100%
+  );
+  z-index: 1;
+}
+
+.contact-studio .studio-card .studio-card-img,
+.contact-studio .studio-card .studio-card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-studio .studio-card .studio-card-img img {
+  transition: transform 900ms cubic-bezier(0.2, 0.6, 0.1, 1);
+}
+
+.contact-studio .studio-card:hover .studio-card-img img {
+  transform: scale(1.08);
+}
+
+.contact-studio .studio-card .studio-card-copy {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-studio .studio-card .studio-card-copy p {
+  color: var(--base-300);
+}
+
+.contact-studio .studio-card .studio-card-copy h5 {
+  line-height: 0.9;
+  color: var(--base-100);
+}
+
+.contact-studio .contact-studio-panel {
+  margin-top: 0.75rem;
+  padding: 2rem;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.contact-studio .contact-studio-panel .contact-studio-panel-copy {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-studio .contact-studio-panel .contact-studio-panel-copy p {
+  color: var(--base-400);
+}
+
+.contact-studio .contact-studio-panel .contact-studio-panel-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.contact-studio .contact-studio-panel .contact-studio-panel-links a {
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+  color: var(--base-100);
+  border-radius: 100px;
+  padding: 0.85rem 1.25rem;
+  transition: all 300ms ease;
+}
+
+.contact-studio .contact-studio-panel .contact-studio-panel-links a:hover {
+  background-color: var(--base-100);
+  color: var(--base-700);
+}
+
+@media (min-width: 2400px) {
+  .contact-hero .contact-hero-copy {
+    justify-content: center;
+    gap: 20rem;
+  }
+
+  .contact-callout .container .contact-callout-header {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-hero .container .contact-hero-col.contact-hero-img-wrapper {
+    display: none;
+  }
+
+  .contact-studio {
+    padding: 3rem 0 5rem 0;
+  }
+
+  .contact-studio .contact-studio-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .contact-studio .contact-studio-header h2,
+  .contact-studio .contact-studio-header p,
+  .contact-studio .contact-studio-panel .contact-studio-panel-copy {
+    width: 100%;
+  }
+
+  .contact-studio .contact-studio-header p {
+    text-align: left;
+  }
+
+  .contact-studio .contact-studio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-studio .studio-card {
+    min-height: 24rem;
+  }
+
+  .contact-studio .contact-studio-panel {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .contact-studio .contact-studio-panel .contact-studio-panel-links {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contact-studio .contact-studio-panel .contact-studio-panel-links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-callout .container .contact-callout-header p {
+    width: 80%;
+  }
+
+  .contact-callout .container {
+    padding: 8rem 2rem 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-studio .contact-studio-grid {
+    grid-template-columns: 1fr;
+  }
+}
