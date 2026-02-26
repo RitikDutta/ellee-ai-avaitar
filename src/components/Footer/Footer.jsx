@@ -29,18 +29,32 @@ const Footer = () => {
               </div>
               <div className="footer-col-links">
                 <a
-                  href="https://www.instagram.com/ellee/"
+                  href="https://www.instagram.com/ellee.ai/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Instagram
                 </a>
                 <a
-                  href="https://www.youtube.com/@ellee"
+                  href="https://www.youtube.com/@Elleeai"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   YouTube
+                </a>
+                <a
+                  href="https://www.threads.com/@ellee.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Threads
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61587696384434"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
                 </a>
               </div>
             </div>

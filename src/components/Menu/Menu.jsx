@@ -373,17 +373,7 @@ const Menu = () => {
         <div className="menu-overlay-footer">
           <div className="menu-social">
             <a
-              href="https://x.com/ellee"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={handleLinkClick}
-            >
-              Twitter
-            </a>
-          </div>
-          <div className="menu-social">
-            <a
-              href="https://www.instagram.com/ellee/"
+              href="https://www.instagram.com/ellee.ai/"
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleLinkClick}
@@ -393,12 +383,32 @@ const Menu = () => {
           </div>
           <div className="menu-social">
             <a
-              href="https://www.youtube.com/@ellee"
+              href="https://www.youtube.com/@Elleeai"
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleLinkClick}
             >
               YouTube
+            </a>
+          </div>
+          <div className="menu-social">
+            <a
+              href="https://www.threads.com/@ellee.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleLinkClick}
+            >
+              Threads
+            </a>
+          </div>
+          <div className="menu-social">
+            <a
+              href="https://www.facebook.com/profile.php?id=61587696384434"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleLinkClick}
+            >
+              Facebook
             </a>
           </div>
         </div>
